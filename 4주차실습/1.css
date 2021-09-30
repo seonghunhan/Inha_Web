@@ -1,0 +1,239 @@
+#body {
+    background-color: black;
+}
+
+.container1{
+    border : 1px solid black;
+    position : fixed;
+    display : flex;
+    flex-direction: column;
+    height : 120px;
+    width: 100%;
+    z-index: 2;
+    top:0;
+    left:0;
+    right:0;
+    background-color:black;
+    
+}
+
+#headline{
+    border : 1px solid white;
+    background-color: white;
+    height: 1%;  
+}
+
+.header_item{
+
+    display : flex;
+    width :100%;
+    height: 95%;
+    justify-content: center;
+    
+
+}
+
+#header_picture{
+    border : 1px solid black;
+    width: 30%;
+    height: 80%;
+    position: relative;
+    top:9px;
+    text-align: center;
+
+}
+
+#imagesize {
+    width: 50%;
+    height: 100%;
+    
+}
+
+
+#header_text{
+
+    overflow:hidden;
+    width:40%;
+    height: 80%;
+    position: relative;
+    top:9px;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 80px;
+    text-align:right;
+    color : white;
+    
+}
+
+
+
+.sidebar{
+    background-color : black;
+    display : flex;
+    position: fixed;
+    width: 270px;
+    top:120px;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.favorite_list{
+    width: 95%;
+    color: white;
+ 
+}
+#sidebar_subject_text{
+    font-size:70px;
+    height: 40px;
+    position: relative;
+    top:10px;
+    font-family: 'Bonheur Royale', cursive;
+}
+
+.favorite3{
+    position:relative;
+    top:40px;
+    display: flex;
+    flex-direction: column;
+    margin:30px;
+    
+}
+
+.contents_text{
+    margin : 20px 0.5px;
+    font-size:25px;
+    color : white;
+    font-family: Georgia;
+}
+#sidebar_line{
+    width:1%;
+    background-color: white;
+}
+
+.container2{
+    top: 110px;
+    left:250px;
+    background-color: black;
+    display: grid;
+    position : relative;
+    height: 100vh;
+    width : 87%;
+    
+
+
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 0.8fr 0.4fr;
+    grid-template-areas: 
+    
+    "main main main"
+    "content1 content2 content2"
+    "footer footer footer"    
+    ;
+
+    grid-gap : 0.2rem;
+    font-size : 15px;
+    color:black;
+    text-align: center;
+    font-weight: 10px;
+    z-index: 1;
+    border:1px solid black;
+
+}
+.main{
+    grid-area: main;
+    background-color:  gray;
+}
+
+.mbti_contents{
+    width : 700px;
+    height : 600px;
+    border : 1px solid black;
+    display : inline-block;
+}
+
+.imagesize2{
+    width: 100%;
+    height: 100%;
+}
+
+.mbti_content1{
+    width : 700px;
+    height : 500px;
+    border : 1px solid black;
+    display : inline-block;
+}
+
+.content1{
+    grid-area: content1;
+    background-color: grey;
+}
+
+.content2{
+    grid-area: content2;
+    background-color: grey;
+}
+
+
+
+.footer{
+    grid-area: footer;
+    background-color: grey;
+    height: 60px;
+    font-size : 30px;
+    color : white;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .container2{
+        
+        grid-template-columns:1fr;
+        grid-template-rows:2fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+        
+        
+        "main"
+        "content1"
+        "content2"
+        "footer" ;
+    }
+    
+    
+    .sidebar{
+        background-color : black;
+        position: fixed;
+        width: 100%;
+        top:120px;
+        height: 50px;
+        z-index: 2;
+    
+    }
+    .favorite_list{
+        width: 100%;
+    }
+    
+    #sidebar_subject_text{
+        font-size:30px;
+        height: 30px;
+        font-family: 'Bonheur Royale', cursive;
+        display : flex;
+        flex-direction: row;
+
+    }
+    .favorite3{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 100%;
+        top:0;
+        margin:0;
+    }
+    
+    .contents_text{
+    
+        font-size:10px;
+        color : white;
+    }
+
+}
