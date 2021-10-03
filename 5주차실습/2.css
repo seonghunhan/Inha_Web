@@ -1,0 +1,25 @@
+*{
+    border:1px solid black;
+}
+
+html{
+    background-color: red;
+}
+
+body{
+    background-color: orange;
+}
+
+div{
+    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    margin: 30px 100px;
+
+
+}
+
+span{
+    background-color: red;
+    margin:30px 100px;
+}

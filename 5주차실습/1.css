@@ -1,0 +1,24 @@
+*{
+    border:1px solid black;
+}
+
+html{
+    background-color: lightskyblue;
+}
+
+body{
+    background-color: lightpink;
+}
+
+div{
+    background-color: coral;
+    height: 150px;
+    width: 150px;
+    display: block;
+}
+
+span{
+    background-color: coral;
+    height: 150px;
+    width: 150px;
+}

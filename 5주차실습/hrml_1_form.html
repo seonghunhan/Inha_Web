@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+    </head>
+    <body>
+    <!--mdn 태그이름 해서 들가서 양식복붙-->
+
+        <form action="">
+            <div>
+                <label for="email">이메일 입력하삼:</label> <!--for,type,id가 email이니깐 DB관련해서 이렇게 해주는게 좋다-->
+                <input type="email" id="email"
+                    pattern=".+@globex.com" size="30" required> <!--pattern은 이메일형식 검증-->
+            </div>
+                <!--required는 필수요소-->
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <input type="password" id="pass" name="password"
+                       minlength="8" required>
+            </div>
+
+            <input type="submit" value="Sign in">
+        </form>
+
+        
+    </body>
+</html>
